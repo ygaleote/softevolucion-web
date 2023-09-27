@@ -1,0 +1,19 @@
+# Nombre de tu proyecto Angular
+name = "Softevolucion"
+
+# Versión de tu proyecto Angular
+version = "1.0.0"
+
+# Comando para construir la aplicación Angular
+build_command = "ng build --prod"
+
+# Comando para ejecutar la aplicación Angular en modo de desarrollo
+dev_command = "ng serve"
+
+# Lista de paquetes Nix que deben estar disponibles para el proyecto
+[nix_dependencies]
+  # Ejemplo: Angular CLI
+  angular-cli = "angular-cli"
+  
+  # Otros paquetes Nix que tu proyecto pueda necesitar
+  # paquete-ejemplo = "paquete-ejemplo"

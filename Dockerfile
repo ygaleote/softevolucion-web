@@ -2,7 +2,7 @@ FROM node:18-alpine3.18 AS build
 WORKDIR /app
 
 COPY . .
-RUN npm install
+RUN npm install --force
 RUN npm run build
 # Meter la aplicacion en un nginx
 FROM nginx:alpine

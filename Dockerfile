@@ -1,10 +1,10 @@
-FROM node:18-alpine3.18 AS build
+# Etapa de construcción
+FROM node:16 AS build
 WORKDIR /app
-
 COPY . .
-RUN npm install --force
-RUN npm run build
-# Meter la aplicacion en un nginx
+RUN rm -rf  node_modules
+RUN npm install --force && npm run build 
+# Etapa de producción
 FROM nginx:alpine
-COPY --from=build /app/dist/admin-front/ /usr/share/nginx/html
+COPY --from=build /app/dist/blk-design-system-angular/ /usr/share/nginx/html
 EXPOSE 80

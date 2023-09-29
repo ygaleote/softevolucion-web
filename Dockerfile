@@ -7,14 +7,10 @@ WORKDIR /app
 # Copia el archivo package.json y package-lock.json a /app
 COPY package*.json ./
 
-# Instala las dependencias de la aplicación
-RUN npm install
 
 # Copia el contenido de la aplicación Angular al directorio de trabajo
 COPY . .
 
-# Compila la aplicación Angular
-RUN npm run build
 
 # Define el comando para iniciar la aplicación
 CMD ["sh", "entrypoint.sh"]

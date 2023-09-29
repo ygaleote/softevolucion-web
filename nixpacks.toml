@@ -10,7 +10,7 @@ version = "1.0.0"
   
 
 [phases.build]
-  cmds = ['npm run install --force ','npm run build']
+  cmds = ['npm run install --legacy-peer-deps ','npm run build']
 
 [start]
   cmd = 'npm run dev'

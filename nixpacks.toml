@@ -12,8 +12,5 @@ dev_command = "ng serve"
 
 # Lista de paquetes Nix que deben estar disponibles para el proyecto
 [nix_dependencies]
-  # Ejemplo: Angular CLI
   angular-cli = "angular-cli"
   
-  # Otros paquetes Nix que tu proyecto pueda necesitar
-  # paquete-ejemplo = "paquete-ejemplo"

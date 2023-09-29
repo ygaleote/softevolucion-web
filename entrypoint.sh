@@ -3,4 +3,4 @@
 echo 'Corriendo'
 npm install --legacy-peer-deps
 echo 'Running server...'
-ng serve --host 0.0.0.0:$PORT
+npm run dev --host 0.0.0.0:$PORT

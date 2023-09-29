@@ -8,7 +8,9 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
-  "keywords": [
+  "engines": {
+    "node": "18"
+  },"keywords": [
 
   ],
   "author": "",

@@ -1,5 +1,5 @@
 # Utiliza una imagen de Node.js como base
-FROM node:14
+FROM node:16
 
 # Establece el directorio de trabajo en /app
 WORKDIR /app
@@ -16,8 +16,5 @@ COPY . .
 # Compila la aplicación Angular
 RUN npm run build
 
-# Expone el puerto en el que se ejecutará la aplicación (puerto 80 en este caso)
-EXPOSE 80
-
 # Define el comando para iniciar la aplicación
-CMD ["npm", "start"]
+CMD ["sh", "entrypoint.sh"]

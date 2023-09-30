@@ -1,24 +1,7 @@
-/*!
 
-=========================================================
-* BLK Design System React - v1.2.2
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/blk-design-system-react
-* Copyright 2023 Creative Tim (https://www.creative-tim.com)
-* Licensed under MIT (https://github.com/creativetimofficial/blk-design-system-react/blob/main/LICENSE.md)
-
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
 import React from "react";
-// react plugin used to create charts
 import { Line } from "react-chartjs-2";
-// reactstrap components
+
 import {
   Button,
   Card,
@@ -33,8 +16,7 @@ import {
   Col,
 } from "reactstrap";
 
-// core components
-import ExamplesNavbar from "components/Navbars/ExamplesNavbar.js";
+import IndexNavbar from "components/Navbars/IndexNavbar";
 import Footer from "components/Footer/Footer.js";
 
 import bigChartData from "variables/charts.js";
@@ -42,61 +24,29 @@ import bigChartData from "variables/charts.js";
 export default function LandingPage() {
   React.useEffect(() => {
     document.body.classList.toggle("landing-page");
-    // Specify how to clean up after this effect:
     return function cleanup() {
       document.body.classList.toggle("landing-page");
     };
   }, []);
   return (
     <>
-      <ExamplesNavbar />
+      <IndexNavbar />
       <div className="wrapper">
         <div className="page-header">
-          <img
-            alt="..."
-            className="path"
-            src={require("assets/img/blob.png")}
-          />
-          <img
-            alt="..."
-            className="path2"
-            src={require("assets/img/path2.png")}
-          />
-          <img
-            alt="..."
-            className="shapes triangle"
-            src={require("assets/img/triunghiuri.png")}
-          />
-          <img
-            alt="..."
-            className="shapes wave"
-            src={require("assets/img/waves.png")}
-          />
-          <img
-            alt="..."
-            className="shapes squares"
-            src={require("assets/img/patrat.png")}
-          />
-          <img
-            alt="..."
-            className="shapes circle"
-            src={require("assets/img/cercuri.png")}
-          />
           <div className="content-center">
             <Row className="row-grid justify-content-between align-items-center text-left">
-              <Col lg="6" md="6">
+              <Col lg="7" md="7">
                 <h1 className="text-white">
-                  We keep your coin <br />
-                  <span className="text-white">secured</span>
+                  Softevolucion <br />
+                  <span className="text-white">Tus Aliados tecnologicos!!</span>
                 </h1>
                 <p className="text-white mb-3">
-                  A wonderful serenity has taken possession of my entire soul,
-                  like these sweet mornings of spring which I enjoy with my
-                  whole heart. I am alone, and feel...
+                Somos una consultora de software recién fundada que se especializa en la creación de soluciones tecnológicas innovadoras para satisfacer las necesidades de nuestros clientes. 
+            Nos apasiona el desarrollo de software de calidad y estamos comprometidos en ofrecer productos y servicios de alto nivel para mejorar la eficiencia y productividad de tu negocio.
                 </p>
                 <div className="btn-wrapper mb-3">
                   <p className="category text-success d-inline">
-                    From 9.99%/mo
+                    Continuar
                   </p>
                   <Button
                     className="btn-link"
@@ -137,11 +87,11 @@ export default function LandingPage() {
                   </div>
                 </div>
               </Col>
-              <Col lg="4" md="5">
+              <Col lg="5" md="7">
                 <img
                   alt="..."
                   className="img-fluid"
-                  src={require("assets/img/etherum.png")}
+                  src={require("assets/img/robot.png")}
                 />
               </Col>
             </Row>
@@ -354,40 +304,9 @@ export default function LandingPage() {
                 <img
                   alt="..."
                   className="img-fluid floating"
-                  src={require("assets/img/chester-wade.jpg")}
+                  src={require("assets/img/robofabrica.png")}
                 />
-                <Card className="card-stats bg-danger">
-                  <CardBody>
-                    <div className="justify-content-center">
-                      <div className="numbers">
-                        <CardTitle tag="p">100%</CardTitle>
-                        <p className="card-category text-white">Safe</p>
-                      </div>
-                    </div>
-                  </CardBody>
-                </Card>
-                <Card className="card-stats bg-info">
-                  <CardBody>
-                    <div className="justify-content-center">
-                      <div className="numbers">
-                        <CardTitle tag="p">573 K</CardTitle>
-                        <p className="card-category text-white">
-                          Satisfied customers
-                        </p>
-                      </div>
-                    </div>
-                  </CardBody>
-                </Card>
-                <Card className="card-stats bg-default">
-                  <CardBody>
-                    <div className="justify-content-center">
-                      <div className="numbers">
-                        <CardTitle tag="p">10 425</CardTitle>
-                        <p className="card-category text-white">Business</p>
-                      </div>
-                    </div>
-                  </CardBody>
-                </Card>
+       
               </Col>
               <Col md="6">
                 <div className="px-md-5">
@@ -446,27 +365,10 @@ export default function LandingPage() {
             className="path2"
             src={require("assets/img/path2.png")}
           />
-          <Col md="12">
-            <Card className="card-chart card-plain">
-              <CardHeader>
-                <Row>
-                  <Col className="text-left" sm="6">
-                    <hr className="line-info" />
-                    <h5 className="card-category">Total Investments</h5>
-                    <CardTitle tag="h2">Performance</CardTitle>
-                  </Col>
-                </Row>
-              </CardHeader>
-              <CardBody>
-                <div className="chart-area">
-                  <Line
-                    data={bigChartData.data}
-                    options={bigChartData.options}
-                  />
-                </div>
-              </CardBody>
-            </Card>
-          </Col>
+        <Col md="4">
+
+          
+        </Col>
         </section>
         <section className="section section-lg section-coins">
           <img

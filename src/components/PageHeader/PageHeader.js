@@ -1,24 +1,12 @@
-/*!
-
-=========================================================
-* BLK Design System React - v1.2.2
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/blk-design-system-react
-* Copyright 2023 Creative Tim (https://www.creative-tim.com)
-* Licensed under MIT (https://github.com/creativetimofficial/blk-design-system-react/blob/main/LICENSE.md)
-
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
 import React from "react";
 
-// reactstrap components
-import { Container } from "reactstrap";
+import {  Container } from "reactstrap";
+
+const style = {
+  marginleft: '-5',
+  paddingLeft: 0,
+  listStyle: 'none'
+};
 
 export default function PageHeader() {
   return (
@@ -32,11 +20,14 @@ export default function PageHeader() {
       <div className="squares square7" />
       <Container>
         <div className="content-center brand">
-          <h1 className="h1-seo">BLK• React</h1>
-          <h3 className="d-none d-sm-block">
-            A beautiful Design System for Bootstrap 4 (reactstrap) and React.
-            It's Free and Open Source.
+          <h1 className="h1-seo">Softevolucion</h1>
+          <h3 className="d-none d-sm-block" style={style}>
+            Somos tus aliados tecnologicos!!
           </h3>
+          <h4 className="d-none d-sm-block" style={style}>
+          Somos una consultora de software recién fundada que se especializa en la creación de soluciones tecnológicas innovadoras para satisfacer las necesidades de nuestros clientes. 
+          Nos apasiona el desarrollo de software de calidad y estamos comprometidos en ofrecer productos y servicios de alto nivel para mejorar la eficiencia y productividad de tu negocio.
+          </h4>
         </div>
       </Container>
     </div>

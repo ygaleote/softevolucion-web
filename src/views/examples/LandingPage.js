@@ -1,6 +1,5 @@
 
 import React from "react";
-import { Line } from "react-chartjs-2";
 
 import {
   Button,
@@ -19,7 +18,6 @@ import {
 import IndexNavbar from "components/Navbars/IndexNavbar";
 import Footer from "components/Footer/Footer.js";
 
-import bigChartData from "variables/charts.js";
 
 export default function LandingPage() {
   React.useEffect(() => {

@@ -6,6 +6,10 @@ Created using IcoMoon - icomoon.io
 
 -------------------------------- */
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @font-face {
   font-family: 'Nucleo';
   src: url('../fonts/nucleo.eot');

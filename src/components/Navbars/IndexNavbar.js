@@ -105,13 +105,6 @@ export default function IndexNavbar() {
             </UncontrolledDropdown>
           
             <NavItem>
-              <Button
-                className="nav-link d-none d-lg-block"
-                color="default"
-                onClick={scrollToDownload}
-              >
-              Login
-              </Button>
             </NavItem>
           </Nav>
         </Collapse>
